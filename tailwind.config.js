@@ -1,9 +1,16 @@
+
 module.exports = {
   content: [
     './public/*.html',
   ],
   theme: {
     extend: {},
+    fontFamily:
+    {
+      vcr: "'VCR OSD Mono', sans-serif"
+    }
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography')
+  ],
 }
